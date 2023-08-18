@@ -1,0 +1,12 @@
+*{
+    user-select: none;
+    color: white;
+}
+body{
+    background: black;
+    overflow-x: hidden;
+}
+.downloadContainers{
+    text-align: center;
+    width: 100%;
+}
