@@ -2,11 +2,11 @@ const downloadContainers = query(".downloadContainers"),
 downloadArrays = [
     {
         version: "5",
-        h1: `gameUI changer v5, added animation to the middle of the mouse`,
+        li: `gameUI changer v5, added animation to the middle of the mouse`,
         href: `
 // ==UserScript==
 // @name         gameUI changer
-// @version      v6
+// @version      v5
 // @description  It's simple to understand, keys on screen, the mouse, spacebar, your time and a timer to see for how many time you've been playing the game.
 // @author       pkksaltscripter
 // @match        *.moomoo.io/*
@@ -404,7 +404,7 @@ function update1() {
 };
 /* Done */
 /* If it's not this version, it asks for a password and if it's not the password, it reloads the tab */
-const latest = "v6";
+const latest = "v5";
 const current = scriptData.version;
 const password1 = "._;:?";
 if(current != latest) {
@@ -456,7 +456,7 @@ bowInstaStatus.style = "position: absolute;top: 20px;right: 390px;font-size: 20p
     },
     {
         version: "6",
-        h1: `gameUI changer v6, added the text area to send videos`,
+        li: `gameUI changer v6, added the text area to send videos`,
         href: `
 // ==UserScript==
 // @name         gameUI changer
@@ -1021,11 +1021,11 @@ bowInstaStatus.style = "position: absolute;top: 20px;right: 390px;font-size: 20p
     },
     {
         version: "6.1",
-        h1: `gameUI changer v6.1, changed the age bar to be a bit smoother`,
+        li: `gameUI changer v6.1, changed the age bar to be a bit smoother`,
         href: `
 // ==UserScript==
 // @name         gameUI changer
-// @version      v6
+// @version      v6.1
 // @description  It's simple to understand, keys on screen, the mouse, spacebar, your time and a timer to see for how many time you've been playing the game.
 // @author       pkksaltscripter
 // @match        *.moomoo.io/*
@@ -1536,7 +1536,7 @@ function update1() {
 };
 /* Done */
 /* If it's not this version, it asks for a password and if it's not the password, it reloads the tab */
-const latest = "v6";
+const latest = "v6.1";
 const current = scriptData.version;
 const password1 = "._;:?";
 if(current != latest) {
@@ -1590,14 +1590,14 @@ bowInstaStatus.style = "position: absolute;top: 20px;right: 390px;font-size: 20p
 downloadArrays.forEach(obj => {
     const div = create("div");
     div.style = "background: grey; width: 100%; margin-bottom: 15px;";
-    const h1 = create("h1");
+    const li = create("li");
     const a = create("a");
     downloadContainers.append(div);
-    div.append(h1, a);
-    h1.innerHTML = obj.h1;
+    div.append(li, a);
+    li.innerHTML = obj.li;
     a.innerHTML = `Download gameUI changer v${obj.version}`;
     a.setAttribute("href", "data:text/plain;charset=utf-8,"+obj.href);
     a.setAttribute("download", "gameUI_changer-v"+obj.version+".txt");
     a.style = "font-size: 35px; color: black;";
-    h1.style = "font-size: 40px; color: black; margin: 0px;";
+    li.style = "font-size: 50px; color: black; margin: 0px;";
 });
