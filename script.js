@@ -3,8 +3,7 @@ downloadArrays = [
     {
         version: "5",
         li: `gameUI changer v5, added animation to the middle of the mouse`,
-        href: `
-// ==UserScript==
+        href: `// ==UserScript==
 // @name         gameUI changer
 // @version      v5
 // @description  It's simple to understand, keys on screen, the mouse, spacebar, your time and a timer to see for how many time you've been playing the game.
@@ -457,8 +456,7 @@ bowInstaStatus.style = "position: absolute;top: 20px;right: 390px;font-size: 20p
     {
         version: "6",
         li: `gameUI changer v6, added the text area to send videos`,
-        href: `
-// ==UserScript==
+        href: `// ==UserScript==
 // @name         gameUI changer
 // @version      v6
 // @description  It's simple to understand, keys on screen, the mouse, spacebar, your time and a timer to see for how many time you've been playing the game.
@@ -1016,14 +1014,12 @@ doc.addEventListener("keydown", e => {
         }
     }
 });
-bowInstaStatus.style = "position: absolute;top: 20px;right: 390px;font-size: 20px;";
-        `
+bowInstaStatus.style = "position: absolute;top: 20px;right: 390px;font-size: 20px;";`
     },
     {
         version: "6.1",
         li: `gameUI changer v6.1, changed the age bar to be a bit smoother`,
-        href: `
-// ==UserScript==
+        href: `// ==UserScript==
 // @name         gameUI changer
 // @version      v6.1
 // @description  It's simple to understand, keys on screen, the mouse, spacebar, your time and a timer to see for how many time you've been playing the game.
@@ -1243,7 +1239,7 @@ cpsDiv.style = "font-size: 20px;position: relative;top: -650px;display: block;po
 maxCpsDiv.style = "font-size: 20px;position: relative;top: -650px;display: block;pointer-events: none;";
 middle.style = "position: absolute;width: 5px;height: 30px;top: 230px;left: 28.5px;background-color: rgba(0, 0, 0, 0.25);border: 2px solid black;border-radius: 15px;";
 musics.forEach(music => {
-    const htmlIn = '<div class="'+music.name+'_div" style="position: relative; margin-bottom: 18px;"><h1 style="font-size: 20px; position: relative; margin: 0px; margin-top: 9.5px; margin-bottom: 9.5px; color: black;">+music.name+</h1><audio src="+music.link+" class="+music.class+" controls muted style="width: 100%; pointer-events: all; position: relative;" generatedaudio="true"></audio></div>';
+    const htmlIn = '<div class="'+music.class+'_div" style="position: relative; margin-bottom: 18px;"><h1 style="font-size: 20px; position: relative; margin: 0px; margin-top: 9.5px; margin-bottom: 9.5px; color: black;">'+music.name+'</h1><audio src="'+music.link+'" class="'+music.class+'" controls style="width: 100%; pointer-events: all; position: relative;" generatedaudio="true"></audio></div>';
     musicMenuHolder.innerHTML+=htmlIn;
 });
 gameUI.append(Temps);
@@ -1583,8 +1579,7 @@ doc.addEventListener("keydown", e => {
         }
     }
 });
-bowInstaStatus.style = "position: absolute;top: 20px;right: 390px;font-size: 20px;";
-        `
+bowInstaStatus.style = "position: absolute;top: 20px;right: 390px;font-size: 20px;";`
     }
 ];
 downloadArrays.forEach(obj => {
