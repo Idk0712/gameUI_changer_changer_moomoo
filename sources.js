@@ -18,6 +18,9 @@ function all(element){
 function create(element){
     return doc.createElement(element);
 };
+function remove(element){
+    element.remove();
+};
 function copy(element){
     const textarea = create("textarea");
     body.append(textarea);
