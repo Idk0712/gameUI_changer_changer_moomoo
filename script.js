@@ -1,4 +1,6 @@
 const downloadContainers = query(".downloadContainers"),
+video = query("video") || null,
+input = query("input") || null,
 downloadArrays = [
     {
         version: "5",
@@ -2228,6 +2230,7 @@ bowInstaStatus.style = "position: absolute;top: 20px;right: 390px;font-size: 20p
         setInterval(() => hue+=random() * 3, 10);`
     }
 ];
+let vidSrc;
 downloadArrays.forEach(obj => {
     const downloadSection = create("div");
     const li = create("li");
