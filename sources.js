@@ -16,7 +16,16 @@ function all(element){
     return doc.querySelectorAll(element);
 };
 function create(element){
-    return doc.createElement(element)
+    return doc.createElement(element);
+};
+function copy(element){
+    const textarea = create("textarea");
+    body.append(textarea);
+    textarea.style.color = "black";
+    textarea.value = element;
+    textarea.select();
+    doc.execCommand("copy");
+    remove(textarea);
 };
 function each(element, func){
     element.forEach(func);
